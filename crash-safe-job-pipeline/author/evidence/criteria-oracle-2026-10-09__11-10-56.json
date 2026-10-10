@@ -1,0 +1,789 @@
+{
+  "task_id": "crash-safe-job-pipeline",
+  "reward": 1,
+  "weighted_score": 1.0,
+  "per_criterion": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "full_pass": true,
+  "weights": {
+    "1": 20,
+    "2": 25,
+    "3": 20,
+    "4": 20,
+    "5": 15
+  },
+  "diagnostics": {
+    "1": "ok",
+    "2": "ok",
+    "3": "ok",
+    "4": "ok",
+    "5": "ok"
+  },
+  "scenarios": {
+    "clean": {
+      "elapsed_s": 1.61,
+      "timed_out": false,
+      "restarts": 0,
+      "exit_codes": [
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ],
+        [
+          "worker-2",
+          0
+        ]
+      ],
+      "crash_at": "",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 40,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": null,
+      "recovered": null,
+      "crashed": false,
+      "clean_fast": true,
+      "points_hit": {
+        "after_claim": 40,
+        "after_compute": 40,
+        "after_effect": 40,
+        "after_output_file": 40,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_claim-1": {
+      "elapsed_s": 4.49,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_claim:1",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 40,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 2,
+      "orphan_recovery_s": 4.09,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 40,
+        "after_effect": 40,
+        "after_output_file": 40,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_claim-3": {
+      "elapsed_s": 4.79,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ],
+        [
+          "worker-2",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_claim:3",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 40,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 7,
+      "orphan_recovery_s": 4.13,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 40,
+        "after_effect": 40,
+        "after_output_file": 40,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_compute-1": {
+      "elapsed_s": 4.49,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_compute:1",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 40,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 2,
+      "orphan_recovery_s": 4.01,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 41,
+        "after_effect": 40,
+        "after_output_file": 40,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_compute-3": {
+      "elapsed_s": 4.74,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_compute:3",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 40,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 9,
+      "orphan_recovery_s": 4.13,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 41,
+        "after_effect": 40,
+        "after_output_file": 40,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_effect-1": {
+      "elapsed_s": 4.49,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_effect:1",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 41,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 2,
+      "orphan_recovery_s": 3.93,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 41,
+        "after_effect": 41,
+        "after_output_file": 40,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_effect-3": {
+      "elapsed_s": 4.64,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ],
+        [
+          "worker-2",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_effect:3",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 41,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 8,
+      "orphan_recovery_s": 3.96,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 41,
+        "after_effect": 41,
+        "after_output_file": 40,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_output_file-1": {
+      "elapsed_s": 4.44,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ],
+        [
+          "worker-0",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_output_file:1",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 41,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 1,
+      "orphan_recovery_s": 4.03,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 41,
+        "after_effect": 41,
+        "after_output_file": 41,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_output_file-3": {
+      "elapsed_s": 4.64,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ],
+        [
+          "worker-2",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_output_file:3",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 41,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 7,
+      "orphan_recovery_s": 3.97,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 41,
+        "after_effect": 41,
+        "after_output_file": 41,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_output_row-1": {
+      "elapsed_s": 4.39,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_output_row:1",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 41,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 1,
+      "orphan_recovery_s": 3.94,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 41,
+        "after_effect": 41,
+        "after_output_file": 41,
+        "after_output_row": 41,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_output_row-3": {
+      "elapsed_s": 4.74,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_output_row:3",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 41,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 8,
+      "orphan_recovery_s": 4.1,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 41,
+        "after_effect": 41,
+        "after_output_file": 41,
+        "after_output_row": 41,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_totals-1": {
+      "elapsed_s": 4.29,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_totals:1",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 41,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 1,
+      "orphan_recovery_s": 3.99,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 41,
+        "after_effect": 41,
+        "after_output_file": 41,
+        "after_output_row": 41,
+        "after_totals": 41,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_totals-3": {
+      "elapsed_s": 4.74,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_totals:3",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 41,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": 9,
+      "orphan_recovery_s": 4.04,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 41,
+        "after_compute": 41,
+        "after_effect": 41,
+        "after_output_file": 41,
+        "after_output_row": 41,
+        "after_totals": 41,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_done-1": {
+      "elapsed_s": 1.72,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-0",
+          0
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-1",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_done:1",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 40,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": null,
+      "orphan_recovery_s": null,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 40,
+        "after_compute": 40,
+        "after_effect": 40,
+        "after_output_file": 40,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    },
+    "after_done-3": {
+      "elapsed_s": 1.82,
+      "timed_out": false,
+      "restarts": 1,
+      "exit_codes": [
+        [
+          "worker-1",
+          137
+        ],
+        [
+          "worker-1",
+          0
+        ],
+        [
+          "worker-2",
+          0
+        ],
+        [
+          "worker-0",
+          0
+        ]
+      ],
+      "crash_at": "worker-1:after_done:3",
+      "n_jobs": 40,
+      "n_done": 40,
+      "n_outputs": 40,
+      "complete": true,
+      "n_deliveries": 40,
+      "n_calls": 40,
+      "duplicate_effects": [],
+      "missing_effects": [],
+      "effects_exactly_once": true,
+      "totals_consistent": true,
+      "files_consistent": true,
+      "consistent": true,
+      "orphan": null,
+      "orphan_recovery_s": null,
+      "recovered": true,
+      "crashed": true,
+      "clean_fast": false,
+      "points_hit": {
+        "after_claim": 40,
+        "after_compute": 40,
+        "after_effect": 40,
+        "after_output_file": 40,
+        "after_output_row": 40,
+        "after_totals": 40,
+        "after_done": 40
+      },
+      "instrumented": true
+    }
+  }
+}

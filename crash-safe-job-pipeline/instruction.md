@@ -1,0 +1,11 @@
+Make the job pipeline in `/app/pipeline` correct when its workers are killed and restarted.
+
+The pipeline takes jobs from a SQLite queue. For each job a worker computes a result, calls an external effect service, writes an output file, records an output row, adds the amount to the customer's running totals and marks the job done. Several workers run at once. Everything is right when no worker dies. When a worker is killed mid-job, jobs are stranded, effects are repeated or lost, and the totals drift away from the outputs.
+
+The exact system, the runtime modules, the required behaviour and the delivery path are specified in `/app/CONTRACT.md`. The effect service lives outside the database and deduplicates only on the idempotency key it is given. The worker calls `chaos.point(name)` at seven fixed places; the harness uses those calls to kill a worker at a precise moment and then starts a replacement. The points must stay where they are and keep their meaning.
+
+Change the pipeline so that, after any sequence of kills and restarts, once all workers have exited: every job is done exactly once with one output row; the effect service has delivered exactly one effect per job; every customer's totals equal the sum over that customer's outputs and the output files match the rows; a job held by a killed worker is finished within 15 seconds of the kill; and with no crashes the batch still completes within 30 seconds. A worker may only exit once every job is done.
+
+Deliver the complete modified package at `/app/submission/pipeline`. You may change the schema, the claim logic, the transactions, the file handling and the module layout. You may not change the runtime modules; the verifier substitutes its own copies and runs your workers as an unprivileged user.
+
+Verification runs one scenario with no crashes and fourteen scenarios that kill one worker at each instrumentation point on its first and on its third hit, restarting it each time. Five criteria are checked across those scenarios: completeness, exactly-once effects, consistent bookkeeping, prompt recovery, and clean throughput. Each criterion must hold in every scenario it covers. The reward is 1 only when all five pass; individual outcomes are kept for diagnosis. `/app/tools/run_scenario.py` reproduces any single scenario. No network access is available or needed.

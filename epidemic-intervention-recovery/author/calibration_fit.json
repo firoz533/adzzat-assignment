@@ -1,0 +1,161 @@
+{
+  "secrets_hidden.json": {
+    "rows": [
+      {
+        "seed": 212,
+        "runtime_s": 29.4,
+        "fit_max_abs": 10.557694760698041,
+        "fit_max_rel": 0.006098289053605171,
+        "beta1": {
+          "est": 0.47863,
+          "abs_err": -0.00137,
+          "rel_err": 0.00286,
+          "contains": true,
+          "width": 0.05164,
+          "width_rel": 0.10758
+        },
+        "beta2": {
+          "est": 0.21668,
+          "abs_err": -0.00332,
+          "rel_err": 0.01511,
+          "contains": true,
+          "width": 0.0451,
+          "width_rel": 0.20502
+        },
+        "gamma": {
+          "est": 0.16949,
+          "abs_err": -0.00051,
+          "rel_err": 0.00301,
+          "contains": true,
+          "width": 0.03553,
+          "width_rel": 0.20901
+        },
+        "t_switch": {
+          "est": 66.33339,
+          "abs_err": -0.06661,
+          "rel_err": 0.001,
+          "contains": true,
+          "width": 0.83304,
+          "width_rel": 0.01255
+        },
+        "rho": {
+          "est": 0.70142,
+          "abs_err": 0.00142,
+          "rel_err": 0.00202,
+          "contains": true,
+          "width": 0.05199,
+          "width_rel": 0.07427
+        },
+        "I0": {
+          "est": 12.09352,
+          "abs_err": 0.09352,
+          "rel_err": 0.00779,
+          "contains": true,
+          "width": 2.06982,
+          "width_rel": 0.17249
+        }
+      },
+      {
+        "seed": 43,
+        "runtime_s": 28.4,
+        "fit_max_abs": 20.61522469925535,
+        "fit_max_rel": 0.011801487580293717,
+        "beta1": {
+          "est": 0.47966,
+          "abs_err": -0.00034,
+          "rel_err": 0.00072,
+          "contains": true,
+          "width": 0.04994,
+          "width_rel": 0.10405
+        },
+        "beta2": {
+          "est": 0.22159,
+          "abs_err": 0.00159,
+          "rel_err": 0.00723,
+          "contains": true,
+          "width": 0.04539,
+          "width_rel": 0.2063
+        },
+        "gamma": {
+          "est": 0.16944,
+          "abs_err": -0.00056,
+          "rel_err": 0.0033,
+          "contains": true,
+          "width": 0.03428,
+          "width_rel": 0.20165
+        },
+        "t_switch": {
+          "est": 66.31653,
+          "abs_err": -0.08347,
+          "rel_err": 0.00126,
+          "contains": true,
+          "width": 0.76201,
+          "width_rel": 0.01148
+        },
+        "rho": {
+          "est": 0.69701,
+          "abs_err": -0.00299,
+          "rel_err": 0.00427,
+          "contains": true,
+          "width": 0.04909,
+          "width_rel": 0.07013
+        },
+        "I0": {
+          "est": 11.97924,
+          "abs_err": -0.02076,
+          "rel_err": 0.00173,
+          "contains": true,
+          "width": 2.0365,
+          "width_rel": 0.16971
+        }
+      }
+    ],
+    "worst": {
+      "beta1": {
+        "max_rel_err": 0.00286,
+        "max_abs_err": 0.00137,
+        "max_width_rel": 0.10758,
+        "max_width_abs": 0.05164,
+        "all_contain": true
+      },
+      "beta2": {
+        "max_rel_err": 0.01511,
+        "max_abs_err": 0.00332,
+        "max_width_rel": 0.2063,
+        "max_width_abs": 0.04539,
+        "all_contain": true
+      },
+      "gamma": {
+        "max_rel_err": 0.0033,
+        "max_abs_err": 0.00056,
+        "max_width_rel": 0.20901,
+        "max_width_abs": 0.03553,
+        "all_contain": true
+      },
+      "t_switch": {
+        "max_rel_err": 0.00126,
+        "max_abs_err": 0.08347,
+        "max_width_rel": 0.01255,
+        "max_width_abs": 0.83304,
+        "all_contain": true
+      },
+      "rho": {
+        "max_rel_err": 0.00427,
+        "max_abs_err": 0.00299,
+        "max_width_rel": 0.07427,
+        "max_width_abs": 0.05199,
+        "all_contain": true
+      },
+      "I0": {
+        "max_rel_err": 0.00779,
+        "max_abs_err": 0.09352,
+        "max_width_rel": 0.17249,
+        "max_width_abs": 2.06982,
+        "all_contain": true
+      },
+      "fit_max_rel": 0.011801487580293717,
+      "fit_max_abs": 20.61522469925535,
+      "max_runtime_s": 29.4
+    }
+  }
+}

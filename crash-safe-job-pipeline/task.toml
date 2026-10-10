@@ -1,0 +1,25 @@
+schema_version = "1.2"
+artifacts = ["/app/submission"]
+[task]
+name = "adzzat/crash-safe-job-pipeline"
+description = "Make a SQLite-backed job pipeline exactly-once under worker crashes: leased claims, idempotent external effects, atomic bookkeeping and prompt recovery."
+keywords = ["software-engineering", "distributed-systems", "exactly-once", "fault-injection", "idempotency"]
+[metadata]
+difficulty = "unvalidated"
+category = "software-engineering"
+version = "0.1.0"
+[agent]
+timeout_sec = 7200.0
+[verifier]
+timeout_sec = 1800.0
+environment_mode = "separate"
+[verifier.environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 2048
+storage_mb = 4096
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 2048
+storage_mb = 4096
